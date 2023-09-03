@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-const purpleColor = Color.fromARGB(255, 209, 34, 239);
-const deepPurple = Color.fromARGB(255, 122, 20, 141);
+const purpleColor = Color.fromARGB(241, 90, 8, 5);
+const deepPurple = Color.fromARGB(241, 90, 8, 5);
 const purpleColor1 = Color.fromARGB(255, 207, 109, 222);
 const whiteColor = Colors.white;
 const greyColor = Color.fromARGB(255, 146, 144, 144);

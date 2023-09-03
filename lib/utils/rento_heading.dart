@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:rento/utils/big_text.dart';
-import 'package:rento/utils/colors.dart';
 import 'package:rento/utils/dimensions.dart';
 
 class RentoHeading extends StatelessWidget {
@@ -11,7 +10,7 @@ class RentoHeading extends StatelessWidget {
     return BigText(
       text: 'Rento',
       size: Dimensions.font30,
-      color: purpleColor,
+      color: Theme.of(context).primaryColor,
     );
   }
 }
