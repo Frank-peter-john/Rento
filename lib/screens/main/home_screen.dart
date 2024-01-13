@@ -12,7 +12,7 @@ import 'package:rento/utils/small_text.dart';
 import 'feed/all_properties.dart';
 
 class Homescreen extends StatefulWidget {
-  const Homescreen({Key? key}) : super(key: key);
+  const Homescreen({super.key});
 
   @override
   State<Homescreen> createState() => _HomescreenState();
@@ -176,8 +176,8 @@ class _HomescreenState extends State<Homescreen>
             labelColor: Theme.of(context).primaryColor,
             labelStyle: TextStyle(fontSize: Dimensions.font14),
             unselectedLabelColor: Colors.grey,
-            indicatorPadding:
-                EdgeInsets.symmetric(horizontal: Dimensions.width20),
+            // indicatorPadding:
+            // EdgeInsets.symmetric(horizontal: Dimensions.width15),
             labelPadding: EdgeInsets.zero,
             tabs: const [
               Tab(text: 'All'),

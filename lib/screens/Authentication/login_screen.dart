@@ -175,7 +175,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
                   SizedBox(height: Dimensions.height20),
 
-                  // PASSWORD ONPUT
+                  // PASSWORD INPUT
                   TextFormField(
                     key: const ValueKey('password'),
                     validator: (value) {

@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:rento/firebase_options.dart';
 import 'package:rento/screens/account/account_items/settings/themes/theme_constants.dart';
 import 'package:rento/screens/account/account_items/settings/themes/theme_provider.dart';
+import 'package:get/get.dart';
 import 'screens/main/main_screen.dart';
 
 Future<void> main() async {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<ThemeProvider>(builder: (context, provider, child) {
-      return MaterialApp(
+      return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Rento',
         theme: lightTheme,

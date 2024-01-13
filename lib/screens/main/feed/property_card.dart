@@ -14,11 +14,11 @@ class PropertyCard extends StatefulWidget {
   final String category;
 
   const PropertyCard({
-    Key? key,
+    super.key,
     required this.propertyDoc,
     required this.ownerDoc,
     required this.category,
-  }) : super(key: key);
+  });
 
   @override
   State<PropertyCard> createState() => _PropertyCardState();
@@ -142,7 +142,8 @@ class _PropertyCardState extends State<PropertyCard> {
                       Text(widget.category),
                       SizedBox(width: Dimensions.width10),
                       Container(
-                        width: Dimensions.width30 * 2,
+                        width: Dimensions.width30 * 3,
+                        height: Dimensions.height25,
                         decoration: BoxDecoration(
                           borderRadius:
                               BorderRadius.circular(Dimensions.radius20),
@@ -152,7 +153,7 @@ class _PropertyCardState extends State<PropertyCard> {
                           child: SmallText(
                             text: '$status',
                             color: whiteColor,
-                            size: Dimensions.font12,
+                            size: Dimensions.font14,
                           ),
                         ),
                       ),
