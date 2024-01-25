@@ -66,7 +66,7 @@ class _HomescreenState extends State<Homescreen>
                 bottom: Dimensions.height20,
               ),
               width: Dimensions.width350 * 2.5,
-              height: Dimensions.height20 * 3,
+              height: Dimensions.height20 * 4,
               decoration: isDark
                   ? BoxDecoration(
                       color: darkSearchBarColor, // Dark background color
@@ -98,7 +98,7 @@ class _HomescreenState extends State<Homescreen>
                   Icon(
                     CupertinoIcons.search,
                     color: Theme.of(context).primaryColor,
-                    size: Dimensions.iconSize22,
+                    size: Dimensions.iconSize30,
                   ),
                   SizedBox(width: Dimensions.width20),
                   Expanded(
@@ -110,7 +110,7 @@ class _HomescreenState extends State<Homescreen>
                         children: [
                           SmallText(
                             text: "Search for a property here.",
-                            size: Dimensions.font14,
+                            size: Dimensions.font20,
                           ),
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.end,
@@ -119,43 +119,43 @@ class _HomescreenState extends State<Homescreen>
                               SmallText(
                                 text: 'Apartments',
                                 color: greyColor,
-                                size: Dimensions.font12,
+                                size: Dimensions.font16,
                               ),
-                              SizedBox(width: Dimensions.font10 / 4),
+                              SizedBox(width: Dimensions.font10 / 2),
                               BigText(
                                 text: '.',
                                 color: greyColor,
-                                size: Dimensions.font18,
+                                size: Dimensions.font22,
                               ),
-                              SizedBox(width: Dimensions.font10 / 4),
+                              SizedBox(width: Dimensions.font10 / 2),
                               SmallText(
                                 text: 'Offices',
                                 color: greyColor,
-                                size: Dimensions.font12,
+                                size: Dimensions.font16,
                               ),
-                              SizedBox(width: Dimensions.font10 / 4),
+                              SizedBox(width: Dimensions.font10 / 2),
                               BigText(
                                 text: '.',
                                 color: greyColor,
-                                size: Dimensions.font18,
+                                size: Dimensions.font22,
                               ),
-                              SizedBox(width: Dimensions.font10 / 4),
+                              SizedBox(width: Dimensions.font10 / 2),
                               SmallText(
                                 text: 'Shops',
                                 color: greyColor,
-                                size: Dimensions.font12,
+                                size: Dimensions.font16,
                               ),
-                              SizedBox(width: Dimensions.font10 / 4),
+                              SizedBox(width: Dimensions.font10 / 2),
                               BigText(
                                 text: '.',
                                 color: greyColor,
-                                size: Dimensions.font18,
+                                size: Dimensions.font22,
                               ),
-                              SizedBox(width: Dimensions.font10 / 4),
+                              SizedBox(width: Dimensions.font10 / 2),
                               SmallText(
                                 text: 'Farms',
                                 color: greyColor,
-                                size: Dimensions.font12,
+                                size: Dimensions.font16,
                               ),
                             ],
                           )
@@ -174,7 +174,7 @@ class _HomescreenState extends State<Homescreen>
             controller: _tabController,
             indicatorColor: Theme.of(context).primaryColor,
             labelColor: Theme.of(context).primaryColor,
-            labelStyle: TextStyle(fontSize: Dimensions.font14),
+            labelStyle: TextStyle(fontSize: Dimensions.font20),
             unselectedLabelColor: Colors.grey,
             // indicatorPadding:
             // EdgeInsets.symmetric(horizontal: Dimensions.width15),
